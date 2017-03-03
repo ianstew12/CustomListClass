@@ -10,7 +10,12 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
+            FakeList<string> testList = new FakeList<string>() { "a","b","c"};
 
+            testList.Remove("a");
+            testList.Add("d");
+            Console.WriteLine(testList);
+            Console.ReadLine();
         }
     }
 }

@@ -87,7 +87,8 @@ namespace ConsoleApplication3
                     {
                         items[j]=items[j+1];
                     }
-                    count -= 1;
+                    items[count-1] = default(T);
+                    count --;
                     return true;
                 }
             }           
