@@ -8,10 +8,6 @@ namespace ConsoleApplication3
     [TestClass]
     public class UnitTest1
     {
-        /* The FakeList constructor initializes the array to length 0, so here I'm testing what happens 
-          when I add to an empty array. I should then test what happens when the array already has something
-          in it. I will do this by adding to the fakelist in arrange*/
-
         [TestMethod]
         public void Add_OneIntegerAddedToEmptyList_SingleIntegerInResultingList()
         {
@@ -60,7 +56,7 @@ namespace ConsoleApplication3
 
         //Add Two Arrays
         [TestMethod]
-        public void Add_TwoIntegerArraysAddedToEmptyList_TwoArraysCombined()
+        public void Add_TwoIntegerArraysAddedToEmptyList_ArraysNotCombined()
         {
             //Arrange
             FakeList<Array> fakelist = new FakeList<Array>();
@@ -79,7 +75,7 @@ namespace ConsoleApplication3
 
         [TestMethod]
         public void Add_IntegerToExistingList_ExistingListThenIntegerNotSum()
-        {//{1}.Add({2}) --> {1,2}
+        {
             //Arrange
             FakeList<int> fakelist = new FakeList<int>();
             int integerInZeroIndex = 1;
@@ -267,7 +263,7 @@ namespace ConsoleApplication3
         }
 
         [TestMethod]
-        public void Remove_OneStringInListRemoved_CountDecreasesByOne()
+        public void Remove_OneItemInListRemoved_CountDecreasesByOne()
         {
             //Arrange
             FakeList<int> fakelist = new FakeList<int>() { 1, 2, 3, 4 };
@@ -316,7 +312,6 @@ namespace ConsoleApplication3
             //Arrange
             FakeList<int> fakelist = new FakeList<int>() { 1, 2, 3, 4 };
             int itemExpectedInIndexOne = 2;
-           
 
             //Act
             int returnedItem =fakelist.GetItem(1);
@@ -355,9 +350,7 @@ namespace ConsoleApplication3
             //Assert
             Assert.AreEqual(testHolderArray[2], fakelist[2]);
         }
-
-        //TODO: .ToString() should not have ", " after last item
-
+        
         [TestMethod]
         public void ToString_ListOfStrings_OneStringWithCommas()
         {
@@ -531,6 +524,21 @@ namespace ConsoleApplication3
 
             //Assert
             Assert.AreEqual(expectedSecondIndexValue, resultingFakeList[1]);
+        }
+
+        [TestMethod]
+        public void MinusOverLoad_TwoIntegerInListSubtracted_BothIntegersRemoved()
+        {
+            //Arrange
+            FakeList<int> firstFakeList = new FakeList<int>() { 1, 2, 3 };
+            FakeList<int> secondFakeList = new FakeList<int>() { 1,2 };
+            int expectedZeroIndexValue = 3;
+
+            //Act
+            FakeList<int> resultingFakeList = firstFakeList - secondFakeList;
+
+            //Assert
+            Assert.AreEqual(expectedZeroIndexValue, resultingFakeList[0]);
         }
 
         [TestMethod]

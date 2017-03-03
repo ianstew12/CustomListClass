@@ -4,3 +4,9 @@ C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\Console
 C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\FakeList.csprojResolveAssemblyReference.cache
 C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
 C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\ConsoleApplication3\obj\Debug\FakeList.csprojResolveAssemblyReference.cache
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb

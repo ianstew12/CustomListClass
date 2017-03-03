@@ -6,3 +6,11 @@ C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\UnitTes
 C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
 C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 C:\Users\ianst\Documents\Visual Studio 2015\Projects\ConsoleApplication3\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\bin\Debug\ConsoleApplication3.exe
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\bin\Debug\ConsoleApplication3.pdb
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\ianst\Documents\Visual Studio 2015\Projects\CustomList\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

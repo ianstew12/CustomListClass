@@ -115,7 +115,7 @@ namespace ConsoleApplication3
             {
                 singleResultingString += items[i].ToString() + ", ";
             }
-            singleResultingString += items[count - 1].ToString(); ;
+            singleResultingString += items[count - 1].ToString(); 
             return singleResultingString;
         }
 
@@ -134,8 +134,11 @@ namespace ConsoleApplication3
         }
 
         public static FakeList<T> operator -(FakeList<T> list1, FakeList<T> list2)
-        {//list1-list2
-            foreach (T item in list2){list1.Remove(item);}
+        {
+            foreach (T item in list2)
+            {
+                list1.Remove(item); 
+            }
             return list1;
         }
 
@@ -160,4 +163,3 @@ namespace ConsoleApplication3
     }
 }
 
-//When you need to use a new object each time you are iterating over it, create a new one within loop
