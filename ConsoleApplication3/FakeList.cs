@@ -161,6 +161,82 @@ namespace ConsoleApplication3
             }
             return resultingList;
         }
+
+        public FakeList<T> Zip(FakeList<T> firstAddedList, FakeList<T> secondAddedList)
+        {
+            int countOfShorterAddedList = (firstAddedList.Count>= secondAddedList.Count)?
+                secondAddedList.Count : firstAddedList.Count;
+            int countOfShortestList = (count >= countOfShorterAddedList) ? count : countOfShorterAddedList;
+            int countOfZipper = 3 * countOfShortestList;
+            FakeList<T> resultingList = new FakeList<T>();
+            for (int i = 0; i < countOfZipper; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    resultingList.Add(items[i / 3]);
+                }
+                else if (i % 3 == 1)
+                {
+                    resultingList.Add(firstAddedList[(i - 1) / 3]);
+                }
+                else if (i % 3 == 2)
+                {
+                    resultingList.Add(secondAddedList[(i - 2) / 3]);
+                }
+            }
+            return resultingList;
+        }
+
+        public FakeList<T> Zip(FakeList<T> firstAddedList, FakeList<T> secondAddedList, 
+            FakeList<T> thirdAddedList)
+        {
+            int countOfShortestList;
+            if (count <= firstAddedList.Count && count <= secondAddedList.Count && count <= thirdAddedList.Count)
+            {
+                countOfShortestList = count;
+            }
+            else if (firstAddedList.Count <= count && firstAddedList.Count <= secondAddedList.Count
+                && firstAddedList.Count <= thirdAddedList.Count)
+            {
+                countOfShortestList = firstAddedList.Count;
+            }
+            else if (secondAddedList.Count <= count && secondAddedList.Count <= firstAddedList.Count
+                && secondAddedList.Count <= thirdAddedList.Count)
+            {
+                countOfShortestList = secondAddedList.Count;
+            }
+            else if (thirdAddedList.Count <= count && thirdAddedList.Count <= firstAddedList.Count &&
+                thirdAddedList.Count <= secondAddedList.Count)
+            {
+                countOfShortestList = thirdAddedList.Count;
+            }
+            else countOfShortestList = count;
+
+            int countOfZipper = 4 * countOfShortestList;
+            FakeList<T> resultingList = new FakeList<T>();
+            for (int i = 0; i < countOfZipper; i++)
+            {
+                if (i % 4 == 0)
+                {
+                    resultingList.Add(items[i / 4]);
+                }
+                else if (i % 4 == 1)
+                {
+                    resultingList.Add(firstAddedList[(i - 1) / 4]);
+                }
+                else if (i % 4 == 2)
+                {
+                    resultingList.Add(secondAddedList[(i - 2) / 4]);
+                }
+                else if (i % 4 == 3)
+                {
+                    resultingList.Add(thirdAddedList[(i - 3) / 4]);
+                }
+            }
+            return resultingList;
+        }
+
+
     }
 }
 

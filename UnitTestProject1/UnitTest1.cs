@@ -408,26 +408,6 @@ namespace ConsoleApplication3
             //Assert
             Assert.AreEqual(resultingString, expectedString);
         }
-
-        //[TestMethod]          //If I have time: add functionality with arrays
-        //public void ToString_ListOfArrays_EachArraySeparatedWithNewline()
-        //{
-        //    //Arrange
-        //    FakeList<Array> fakelist = new FakeList<Array>();
-        //    int[] x = new int[2];
-        //    x[0] = 1;
-        //    x[1] = 2;
-        //    int[] y = new int[2] { 3, 4 };
-        //    string expectedResult = "1, 2\n3, 4";
-
-        //    //Act
-        //    fakelist.Add(x);
-        //    fakelist.Add(y);
-        //    string resultingString = fakelist.ToString();
-
-        //    //Assert
-        //    Assert.AreEqual(expectedResult, resultingString);      
-        //}
      
         [TestMethod]
         public void PlusOverload_IntegerLists_OnecombinedList()
