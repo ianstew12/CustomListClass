@@ -236,7 +236,33 @@ namespace ConsoleApplication3
             return resultingList;
         }
 
+        public  void Swap(T[] items, int m, int n)
+        {
+            T temporary;
 
+            temporary = items[m];
+            items[m] = items[n];
+            items[n] = temporary;
+        }
+        //public abstract int Compare(T x, T y)
+        //{
+        //Comparer<T>.Compare Method (T, T)
+        //}
+
+        //public void BubbleSort()
+        //{
+        //    int i, j;
+        //    for (j=Count-1; j>0; j--)
+        //    {
+        //        for (i=0; i < j; i++)
+        //        {
+        //            if (items[i].Compare(items[i + 1])  )  //FIND HOW TO COMPARE GENERICS (Icomparable?)
+        //            {
+        //                Swap(items, i, i + 1);
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
 
